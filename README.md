@@ -12,14 +12,14 @@ A guide that shows how to claim LCC from a trezor
 
 I know this works as I've done it myself.
 
-Here's an overview followed by more detailed instructions:
+Step by Step Instructions:
 
-1. Send whatever currencies currently on your trezor to another secure wallet or trezor.
-2. Create an offline version of https://iancoleman.io/bip39/
-3. Open the BIP39 tool in your browser, and paste your 24 word seed phrase into text box labelled: "BIP39 Mnemonic"
+1. Send whatever currencies currently on your trezor to another secure wallet or Trezor. This is incredibly important because there's a chance you could lose your cryptos after you regenerate your private keys. Do not ignore this step! Also, afterwards, please note that you shouldn't use your trezor again until you wipe it with a completely new seed. Instructions for wiping your Trezor can be found here: https://doc.satoshilabs.com/trezor-user/advanced_features.html
+2. Create an offline version of https://iancoleman.io/bip39/. The instructions for doing that are located on that page in the "Offline Usage" section.
+3. Open the local install of the BIP39 tool in your browser, and paste your 24 word seed phrase into text box labelled: "BIP39 Mnemonic"
 4. Once the tool is done processing (should only take a few seconds), click 'BIP49' under the Derivation Path tabs:
 ![alt text](https://i.imgur.com/iTEawaD.png)
-5. Scroll down to the Derived Addresses.
+5. Scroll down to the Derived Addresses section.
 6. Open your (now empty) Trezor, switch to the LTC wallet, and copy any of the addresses that had LTC at the time of the fork into a text file
 7. Find these addresses in the Derived Addresses table, and copy the private keys into your text file next to each address you copied from step 5.
 8. Open your LCC wallet, and go to Main Menu -> Help -> Debug Window -> Console
